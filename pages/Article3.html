@@ -1,0 +1,517 @@
+<html>
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        
+    <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:Times,serif;font-size:16.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Times,serif;font-size:16.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Times,serif;font-size:28.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Times,serif;font-size:28.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Times,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Times,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Times,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_007{font-family:Times,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_005{font-family:Times,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Times,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Times,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Times,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Times,serif;font-size:5.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Times,serif;font-size:5.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Times,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Times,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Times,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_012{font-family:Times,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_013{font-family:Times,serif;font-size:6.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Times,serif;font-size:6.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_014{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_015{font-family:Times,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_015{font-family:Times,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_016{font-family:Times,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Times,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Times,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Times,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Times,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_018{font-family:Times,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="a5893e00-6932-11eb-8b25-0cc47a792c0a_id_a5893e00-6932-11eb-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html"> <img src="../images/UNICAMP_logo.svg-520x245.png" style="height: 40px"> </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="Article3.html">Petite histoire des humanités digitales</a>
+                      <a class="nav-link" href="Article2.html">Introduction à la TEI</a>
+                      <a class="nav-link" href="Article1.html">Les SIC à l’épreuve du digital et des Humanités</a>
+                     
+                    </div>
+                  </div>
+                </div>
+              </nav>
+<div style="position:absolute;left:50%;margin-left:-297px;top:60px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="a5893e00-6932-11eb-8b25-0cc47a792c0a_id_a5893e00-6932-11eb-8b25-0cc47a792c0a_files/background01.jpg" width=595 height=841></div>
+<div style="position:absolute;left:93.86px;top:68.44px" class="cls_002"><span class="cls_002">Préprint du chapitre Olivier Le Deuff, Frédéric Clavert. « Petite</span></div>
+<div style="position:absolute;left:78.74px;top:89.70px" class="cls_002"><span class="cls_002">histoire des humanités digitales », Le temps des humanités digitales,</span></div>
+<div style="position:absolute;left:136.94px;top:110.82px" class="cls_002"><span class="cls_002">(olivier Le Deuff, dir), Fyp éditions, 2014,p.15-31</span></div>
+<div style="position:absolute;left:265.37px;top:153.06px" class="cls_002"><span class="cls_002">Chapitre I</span></div>
+<div style="position:absolute;left:86.06px;top:173.46px" class="cls_003"><span class="cls_003">Petite histoire des humanités digitales</span></div>
+<div style="position:absolute;left:215.09px;top:218.58px" class="cls_004"><span class="cls_004">Olivier Le Deuff, Frédéric Clavert</span></div>
+<div style="position:absolute;left:70.82px;top:261.66px" class="cls_006"><span class="cls_006">1— Mythes et origines</span></div>
+<div style="position:absolute;left:84.98px;top:282.21px" class="cls_007"><span class="cls_007">Digitus Dei est hic !</span><span class="cls_005"> C’est par ces mots que Roberto Busa</span><span class="cls_008"><sup>1</sup></span><span class="cls_005">, le prêtre jésuite à l’origine de</span></div>
+<div style="position:absolute;left:70.82px;top:297.69px" class="cls_005"><span class="cls_005">l’utilisation de l’outil informatique sur des corpus textuels, désigne la présence divine dans le texte.</span></div>
+<div style="position:absolute;left:70.82px;top:312.21px" class="cls_005"><span class="cls_005">L’anecdote est à double sens, faisant autant référence à la pratique de l’index qui désigne, qu’à l’index</span></div>
+<div style="position:absolute;left:70.82px;top:326.73px" class="cls_005"><span class="cls_005">en tant que technique de classement des concepts ou mots-clés présents dans un document. Cette</span></div>
+<div style="position:absolute;left:70.82px;top:341.25px" class="cls_005"><span class="cls_005">présence digitale dans le texte s’est parfois manifestée par des symboles dans les manuscrits, tel un</span></div>
+<div style="position:absolute;left:70.82px;top:355.77px" class="cls_005"><span class="cls_005">doigt pointant justement l’endroit du texte qu’il fallait absolument lire. Cette symbolique a été</span></div>
+<div style="position:absolute;left:70.82px;top:370.29px" class="cls_005"><span class="cls_005">transférée dans les environnements numériques pour signaler un lien hypertexte par exemple. Il s’agit</span></div>
+<div style="position:absolute;left:70.82px;top:383.97px" class="cls_005"><span class="cls_005">d’une forme d’architexte</span><span class="cls_008"><sup>2</sup></span><span class="cls_005">, un élément inclus dans un système qui se trouve dissimulé et intégré dans le</span></div>
+<div style="position:absolute;left:70.82px;top:399.45px" class="cls_005"><span class="cls_005">code d’un logiciel informatique et qui continue de produire des effets, même si ses origines peuvent</span></div>
+<div style="position:absolute;left:70.82px;top:413.97px" class="cls_005"><span class="cls_005">remonter bien au-delà.</span></div>
+<div style="position:absolute;left:84.98px;top:428.49px" class="cls_005"><span class="cls_005">Cette signalétique symboliquement tactile le devient de plus en plus concrètement avec les</span></div>
+<div style="position:absolute;left:70.82px;top:443.01px" class="cls_005"><span class="cls_005">interfaces interactives des tablettes. Tandis que l’adjectif numérique renforce la calculabilité des</span></div>
+<div style="position:absolute;left:70.82px;top:456.57px" class="cls_005"><span class="cls_005">données, l’adjectif digital exerce comme un rappel vers une matérialité et une « prise en main »</span><span class="cls_008"><sup>3</sup></span><span class="cls_005"> que</span></div>
+<div style="position:absolute;left:70.82px;top:472.07px" class="cls_005"><span class="cls_005">les francophones distinguent mieux que les anglophones. Mais le débat entre digital et numérique n’est</span></div>
+<div style="position:absolute;left:70.82px;top:486.59px" class="cls_005"><span class="cls_005">qu’une question ponctuelle. En effet, plutôt que de s’interroger sur l’adjectif le plus adapté entre</span></div>
+<div style="position:absolute;left:70.82px;top:501.23px" class="cls_005"><span class="cls_005">« numérique » et « digital », il importe surtout de se demander quelles sont ces humanités auxquelles</span></div>
+<div style="position:absolute;left:70.82px;top:515.75px" class="cls_005"><span class="cls_005">on fait référence. Le terme d’humanités s’est vu quasi ressuscité avec l’adjonction de l’adjectif</span></div>
+<div style="position:absolute;left:70.82px;top:530.27px" class="cls_005"><span class="cls_005">numérique. Difficile aussi d’en donner une définition claire, si ce n’est qu’elles ont souvent été</span></div>
+<div style="position:absolute;left:70.82px;top:544.79px" class="cls_005"><span class="cls_005">qualifiées d’« humanités classiques ». Les humanités classiques renvoient à une connaissance de</span></div>
+<div style="position:absolute;left:70.82px;top:559.31px" class="cls_005"><span class="cls_005">« l’humanité » (</span><span class="cls_007">humanitas, </span><span class="cls_005">en latin) grâce aux connaissances et aux compétences de ceux qui se</span></div>
+<div style="position:absolute;left:70.82px;top:573.83px" class="cls_005"><span class="cls_005">montrent capables de lire, comprendre et d’interpréter des textes, notamment en grec et en latin.</span></div>
+<div style="position:absolute;left:70.82px;top:588.35px" class="cls_005"><span class="cls_005">Longtemps associées aux différents arts libéraux (</span><span class="cls_007">quadrivium </span><span class="cls_005">et</span><span class="cls_007"> trivium</span><span class="cls_005">), les humanités ou études</span></div>
+<div style="position:absolute;left:70.82px;top:601.91px" class="cls_005"><span class="cls_005">humanistes ont aussi désigné la base de l’enseignement secondaire, notamment au </span><span class="cls_009">XIX</span><span class="cls_008"><sup>e</sup></span><span class="cls_005"> siècle.</span></div>
+<div style="position:absolute;left:70.82px;top:617.51px" class="cls_007"><span class="cls_007">Humanities</span><span class="cls_005"> possède un sens quelque peu différent et renvoie à diverses disciplines dont l’histoire, la</span></div>
+<div style="position:absolute;left:70.82px;top:632.03px" class="cls_005"><span class="cls_005">philosophie, la littérature mais aussi le droit. Ce terme d’« humanités » devient polysémique et</span></div>
+<div style="position:absolute;left:70.82px;top:646.55px" class="cls_005"><span class="cls_005">finalement pratique puisqu’il permet de rassembler les tenants des</span></div>
+<div style="position:absolute;left:394.13px;top:646.55px" class="cls_005"><span class="cls_005">« belles lettres » et d’autres</span></div>
+<div style="position:absolute;left:70.82px;top:661.10px" class="cls_005"><span class="cls_005">disciplines plus couramment rassemblées actuellement sous le vocable de sciences humaines et</span></div>
+<div style="position:absolute;left:70.82px;top:675.62px" class="cls_005"><span class="cls_005">sociales. Finalement, en dehors des enjeux possibles de frontières disciplinaires, c’est aussi la question</span></div>
+<div style="position:absolute;left:70.82px;top:704.54px" class="cls_010"><span class="cls_010"><sup>1</sup></span><span class="cls_011">. Roberto Busa, « Foreword: Perspectives on the</span><span class="cls_012"> digital humanities</span><span class="cls_011"> », </span><span class="cls_012">in</span><span class="cls_011"> S. Schreibman S., R. Siemens, J. Unsworth (Éd.), </span><span class="cls_012">A Companion to</span></div>
+<div style="position:absolute;left:70.82px;top:714.26px" class="cls_012"><span class="cls_012">digital humanities</span><span class="cls_011">, Wiley-Blackwell, 2008, p. 16-21.</span></div>
+<div style="position:absolute;left:70.82px;top:722.90px" class="cls_010"><span class="cls_010"><sup>2</sup></span><span class="cls_011">. Le sens ici est différent de celui initialement proposé par Genette : Gérard Genette, </span><span class="cls_012">Introduction à l’architexte</span><span class="cls_011">, Seuil, 1979. Voir aussi</span></div>
+<div style="position:absolute;left:70.82px;top:732.62px" class="cls_011"><span class="cls_011">Emmanuel Souchier, Yves Jeanneret et </span><span class="cls_012">al.</span><span class="cls_011">, </span><span class="cls_012">Lire, écrire, récrire : Objets, signes et pratiques des médias informatisés</span><span class="cls_011">, Centre Pompidou-BPI,</span></div>
+<div style="position:absolute;left:70.82px;top:741.86px" class="cls_011"><span class="cls_011">2003.</span></div>
+<div style="position:absolute;left:70.82px;top:750.50px" class="cls_010"><span class="cls_010"><sup>3</sup></span><span class="cls_011">. Voir notamment le billet de Claire Clivaz, « “Humanités digitales” : mais oui, un néologisme consciemment choisi ! », sur son blog</span></div>
+<div style="position:absolute;left:70.82px;top:760.22px" class="cls_011"><span class="cls_011">claireclivaz.hypotheses.org.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:851px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="a5893e00-6932-11eb-8b25-0cc47a792c0a_id_a5893e00-6932-11eb-8b25-0cc47a792c0a_files/background02.jpg" width=595 height=841></div>
+<div style="position:absolute;left:70.82px;top:68.80px" class="cls_005"><span class="cls_005">de l’humanisme qui est posée et sans doute à travers l’humanisme, la question de l’utilité des</span></div>
+<div style="position:absolute;left:70.82px;top:82.48px" class="cls_005"><span class="cls_005">humanités,  sans  cesse  menacées  pour  leur  possible  non-adaptation  au  marché  de  l’emploi</span><span class="cls_008"><sup>4</sup></span><span class="cls_005">.</span></div>
+<div style="position:absolute;left:70.82px;top:97.02px" class="cls_005"><span class="cls_005">Évidemment, le rapport étroit entretenu avec les techniques mérite d’rtre interrogé</span><span class="cls_008"><sup>5</sup></span><span class="cls_005">.</span></div>
+<div style="position:absolute;left:84.98px;top:112.50px" class="cls_005"><span class="cls_005">Impossible de faire également l’impasse sur un transhumanisme qui vise à améliorer génétiquement</span></div>
+<div style="position:absolute;left:70.82px;top:126.06px" class="cls_005"><span class="cls_005">ou par extension l’être humain. Un des plus célèbres représentants est Ray Kurzweil</span><span class="cls_008"><sup>6</sup></span><span class="cls_005">, récemment</span></div>
+<div style="position:absolute;left:70.82px;top:141.54px" class="cls_005"><span class="cls_005">engagé par Google pour travailler sur le transfert intégral du contenu du cerveau sous forme</span></div>
+<div style="position:absolute;left:70.82px;top:155.10px" class="cls_005"><span class="cls_005">numérique. Un vieux mythe et fantasme déjà porté notamment par Hans Moravec</span><span class="cls_008"><sup>7</sup></span><span class="cls_005"> et la L5society,</span></div>
+<div style="position:absolute;left:70.82px;top:169.62px" class="cls_005"><span class="cls_005">ainsi que par la science-fiction avec entre autres les écrits de William Gibson</span><span class="cls_008"><sup>8</sup></span><span class="cls_005">.</span></div>
+<div style="position:absolute;left:84.98px;top:185.10px" class="cls_005"><span class="cls_005">Les</span><span class="cls_007"> digital humanities</span><span class="cls_005"> se sont positionnées différemment, même s’il s’agit aussi d’augmenter les</span></div>
+<div style="position:absolute;left:70.82px;top:199.74px" class="cls_005"><span class="cls_005">capacités d’analyse et de partage, mais peut-être à des fins plus collectives et collaboratives. Il est</span></div>
+<div style="position:absolute;left:70.82px;top:214.26px" class="cls_005"><span class="cls_005">probable aussi qu’il faille également songer les cultures numériques actuelles et futures dans une</span></div>
+<div style="position:absolute;left:70.82px;top:228.78px" class="cls_005"><span class="cls_005">réinterrogation des pratiques corporelles dont la culture classique avait quelque peu figé dans la</span></div>
+<div style="position:absolute;left:70.82px;top:243.30px" class="cls_005"><span class="cls_005">position studieuse de la chaise et du bureau.</span></div>
+<div style="position:absolute;left:84.98px;top:256.86px" class="cls_005"><span class="cls_005">En effet, les discours des </span><span class="cls_007">digital humanities</span><span class="cls_005"> sont porteurs de « mouvement »</span><span class="cls_008"><sup>9</sup></span><span class="cls_005"> et prônent autant le</span></div>
+<div style="position:absolute;left:70.82px;top:272.37px" class="cls_005"><span class="cls_005">faire que le dire. L’esprit qui y règne est de l’ordre des </span><span class="cls_007">makers</span><span class="cls_005">, tels que les décrit Chris Anderson pour</span></div>
+<div style="position:absolute;left:70.82px;top:286.89px" class="cls_005"><span class="cls_005">évoquer ces nouveaux entrepreneurs du numérique notamment autour des imprimantes 3D. Dans les</span></div>
+<div style="position:absolute;left:70.82px;top:301.41px" class="cls_007"><span class="cls_007">digital humanities</span><span class="cls_005">, il s’agit surtout de travailler autour d’éléments scientifiques et de recherche.</span></div>
+<div style="position:absolute;left:84.98px;top:315.93px" class="cls_005"><span class="cls_005">« </span><span class="cls_007">Digital humanities</span><span class="cls_005"> est le terme courant qualifiant les efforts multiples et divers de l’adaptation à</span></div>
+<div style="position:absolute;left:70.82px;top:330.57px" class="cls_005"><span class="cls_005">la culture numérique du monde savant. Il illustre, par son histoire, et surtout par son incarnation</span></div>
+<div style="position:absolute;left:70.82px;top:345.09px" class="cls_005"><span class="cls_005">institutionnelle   actuelle,   aux   États-Unis   comme   en   Europe,   l’évolution   non   seulement   de</span></div>
+<div style="position:absolute;left:70.82px;top:359.61px" class="cls_005"><span class="cls_005">l’environnement numérique dans ses effets sur l’édition académique et scientifique et sur ce qu’on</span></div>
+<div style="position:absolute;left:70.82px;top:374.13px" class="cls_005"><span class="cls_005">appelle parfois “</span><span class="cls_007">scholarly communication</span><span class="cls_005">”, mais surtout de l’attitude des institutions culturelles et</span></div>
+<div style="position:absolute;left:70.82px;top:388.65px" class="cls_005"><span class="cls_005">universitaires. »10</span></div>
+<div style="position:absolute;left:70.82px;top:417.69px" class="cls_006"><span class="cls_006">2— Roberto Busa : précurseur ?</span></div>
+<div style="position:absolute;left:84.98px;top:439.29px" class="cls_005"><span class="cls_005">Le prêtre jésuite italien Roberto Busa (1913-2011) est souvent cité pour son action de précurseur</span></div>
+<div style="position:absolute;left:70.82px;top:453.81px" class="cls_005"><span class="cls_005">dans la volonté d’utiliser les technologies informatiques appliquées aux textes. Il y songe dès 1946,</span></div>
+<div style="position:absolute;left:70.82px;top:468.35px" class="cls_005"><span class="cls_005">mais c’est trois ans plus tard, lors de sa rencontre avec </span><A HREF="http://fr.wikipedia.org/wiki/Thomas_J._Watson">Thomas J. Watson,</A><span class="cls_005"> le fondateur d<A HREF="http://fr.wikipedia.org/wiki/International_Business_Machines">’IBM,</A> qu’il</div>
+<div style="position:absolute;left:70.82px;top:482.87px" class="cls_005"><span class="cls_005">parvient à lancer son projet d’analyse de l’œuvre de Thomas d’Aquin. Le projet va se réaliser durant</span></div>
+<div style="position:absolute;left:70.82px;top:497.39px" class="cls_005"><span class="cls_005">de nombreuses années et consiste principalement en une lemmatisation du corpus, c’est-à-dire la</span></div>
+<div style="position:absolute;left:70.82px;top:511.91px" class="cls_005"><span class="cls_005">création d’un index organisé et structuré des termes présents dans les textes. Un des objectifs de la</span></div>
+<div style="position:absolute;left:70.82px;top:526.43px" class="cls_005"><span class="cls_005">lemmatisation étant de réduire les mots à leur racine grammaticale, afin de repérer plus aisément les</span></div>
+<div style="position:absolute;left:70.82px;top:540.95px" class="cls_005"><span class="cls_005">proximités, et le nombre de fois où un mot est présent dans un texte, ce qu’on appelle des occurrences.</span></div>
+<div style="position:absolute;left:70.82px;top:554.51px" class="cls_005"><span class="cls_005">Le corpus est actuellement consultable en ligne.</span><span class="cls_008"><sup>11</sup></span><span class="cls_005"> La longue expérience de Busa est intéressante, car</span></div>
+<div style="position:absolute;left:70.82px;top:570.11px" class="cls_005"><span class="cls_005">elle montre l’évolution impressionnante des technologies tout au long du projet, que ce soit en</span></div>
+<div style="position:absolute;left:70.82px;top:584.63px" class="cls_005"><span class="cls_005">puissance de calcul, ou en place nécessaire pour conserver les données. Le corpus lemmatisé était</span></div>
+<div style="position:absolute;left:70.82px;top:599.15px" class="cls_005"><span class="cls_005">prévu initialement pour être imprimé sous la forme d’un index papier. Roberto Busa travailla</span></div>
+<div style="position:absolute;left:70.82px;top:630.95px" class="cls_010"><span class="cls_010"><sup>4</sup></span><span class="cls_011">. La question agitait déjà au début du </span><span class="cls_013">XX</span><span class="cls_010"><sup>e</sup></span><span class="cls_011"> siècle. Voir notamment : Pierre Lasserre, </span><span class="cls_012">La doctrine officielle de l’Université : Critique du haut</span></div>
+<div style="position:absolute;left:70.82px;top:640.67px" class="cls_012"><span class="cls_012">enseignement de l’État, défense et théorie des humanités classiques</span><span class="cls_011">, Mercure de France, 1913.</span></div>
+<div style="position:absolute;left:70.82px;top:649.43px" class="cls_010"><span class="cls_010"><sup>5</sup></span><span class="cls_011">. Éric Guichard, « L’Internet et les épistémologies des SHS », revue </span><span class="cls_012">Sciences / Lettres</span><span class="cls_011">, n° 2, automne 2013. Les questions épistémologiques</span></div>
+<div style="position:absolute;left:70.82px;top:659.06px" class="cls_011"><span class="cls_011">liées aux humanités numériques sont discutées dans cet article qui conteste par ailleurs cette expression ou du moins la revendication de</span></div>
+<div style="position:absolute;left:70.82px;top:668.30px" class="cls_011"><span class="cls_011">l’émergence d’une nouvelle discipline.</span></div>
+<div style="position:absolute;left:70.82px;top:676.94px" class="cls_010"><span class="cls_010"><sup>6</sup></span><span class="cls_011">. </span><span class="cls_012">Cf.</span><span class="cls_011"> Ray Kurzweil, </span><span class="cls_012">Humanité 2.0 : la bible du changement</span><span class="cls_011">, M21-FYP Éditions, 2007.</span></div>
+<div style="position:absolute;left:70.82px;top:686.18px" class="cls_010"><span class="cls_010"><sup>7</sup></span><span class="cls_011">. Hans P. Moravec, </span><span class="cls_012">Mind Children : The Future of Robot and Human Intelligence</span><span class="cls_011">, Harvard University Press, 1988.</span></div>
+<div style="position:absolute;left:70.82px;top:695.42px" class="cls_010"><span class="cls_010"><sup>8</sup></span><span class="cls_011">. L’œuvre de Gibson est souvent convoquée pour illustrer le mouvement cyberpunk. Ses écrits ont notamment influencé le cinéma. Le</span></div>
+<div style="position:absolute;left:70.82px;top:705.02px" class="cls_011"><span class="cls_011">roman le plus connu est </span><span class="cls_012">Neuromancien</span><span class="cls_011">, où Gibson décrit le réseau comme une hallucination collective. William Gibson, </span><span class="cls_012">Neuromancien</span><span class="cls_011">, J’ai</span></div>
+<div style="position:absolute;left:70.82px;top:714.26px" class="cls_011"><span class="cls_011">lu, 1995. Ces thèmes ont été plus récemment abordés dans le roman de Aurélien Bellanger, </span><span class="cls_012">La théorie de l’information</span><span class="cls_011">, Gallimard, 2012.</span></div>
+<div style="position:absolute;left:70.82px;top:722.90px" class="cls_010"><span class="cls_010"><sup>9</sup></span><span class="cls_011">. Toutefois, le mouvement n’est pas exempt d’une certaine uniformité ou d’une vision essentiellement anglo-saxonne. Le mouvement</span></div>
+<div style="position:absolute;left:70.82px;top:732.62px" class="cls_011"><span class="cls_011">s’interroge d’ailleurs sur cette domination très nette du chercheur blanc et souvent américain. Les post-colonial </span><span class="cls_012">digital humanities</span><span class="cls_011"> cherchent</span></div>
+<div style="position:absolute;left:70.82px;top:741.86px" class="cls_011"><span class="cls_011">justement à sortir de ce prisme.</span></div>
+<div style="position:absolute;left:70.82px;top:750.50px" class="cls_010"><span class="cls_010"><sup>10</sup></span><span class="cls_011">. Milad Doueihi, </span><span class="cls_012">Pour un humanisme numérique</span><span class="cls_011">, Seuil, 2011.</span></div>
+<div style="position:absolute;left:70.82px;top:759.74px" class="cls_010"><span class="cls_010"><sup>11</sup></span><span class="cls_011">. </span><span class="cls_012">Corpus Thomisticum</span><span class="cls_011">, disponible sur <A HREF="http://www.corpusthomisticum.org./">www.corpusthomisticum.org.</A> </span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:1702px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="a5893e00-6932-11eb-8b25-0cc47a792c0a_id_a5893e00-6932-11eb-8b25-0cc47a792c0a_files/background03.jpg" width=595 height=841></div>
+<div style="position:absolute;left:70.82px;top:68.80px" class="cls_005"><span class="cls_005">longtemps avec des enregistrements de données sur cassettes, dont la longueur totale des bandes mises</span></div>
+<div style="position:absolute;left:70.82px;top:83.46px" class="cls_005"><span class="cls_005">bout à bout équivalait à la distance entre Paris et Lisbonne ! On mesure ainsi mieux le cheminement</span></div>
+<div style="position:absolute;left:70.82px;top:97.02px" class="cls_005"><span class="cls_005">technologique, quand on sait que ce travail tient sur un seul DVD désormais</span><span class="cls_008"><sup>12</sup></span><span class="cls_005">.</span></div>
+<div style="position:absolute;left:84.98px;top:112.50px" class="cls_005"><span class="cls_005">Toutefois, cette histoire est quelque peu réductrice, et d’autres pistes méritent d’être également</span></div>
+<div style="position:absolute;left:70.82px;top:127.02px" class="cls_005"><span class="cls_005">citées, car l’influence de Busa semble parfois plus modeste, tant il est surtout cité à partir des</span></div>
+<div style="position:absolute;left:70.82px;top:141.54px" class="cls_005"><span class="cls_005">années 1990. L’influence des sciences économiques et leurs méthodes quantitatives ont grandement</span></div>
+<div style="position:absolute;left:70.82px;top:156.06px" class="cls_005"><span class="cls_005">influencé les sciences humaines et sociales, ce que montre Frédéric Clavert dans le cas de l’histoire</span></div>
+<div style="position:absolute;left:70.82px;top:170.58px" class="cls_005"><span class="cls_005">(voir chapitre 2). La liste des participants connus et moins connus à cette histoire pourrait être longue.</span></div>
+<div style="position:absolute;left:70.82px;top:185.10px" class="cls_005"><span class="cls_005">Les acteurs de terrain qui ont contribué à la diffusion des outils et à la démythification sont nombreux.</span></div>
+<div style="position:absolute;left:70.82px;top:199.74px" class="cls_005"><span class="cls_005">Il y a donc des acteurs quelque peu cachés de cette histoire. Le projet Hidden Histories13 cherche</span></div>
+<div style="position:absolute;left:70.82px;top:214.26px" class="cls_005"><span class="cls_005">justement à en rassembler les témoignages. Ce ne sera pas notre propos ici tant il s’agirait d’effectuer</span></div>
+<div style="position:absolute;left:70.82px;top:228.78px" class="cls_005"><span class="cls_005">une archéologie des humanités numériques.</span></div>
+<div style="position:absolute;left:70.82px;top:257.82px" class="cls_006"><span class="cls_006">3— Humanities computing : les humanités assistées par l’ordinateur</span></div>
+<div style="position:absolute;left:84.98px;top:279.33px" class="cls_005"><span class="cls_005">Les </span><span class="cls_007">digital humanities</span><span class="cls_005"> ne sont donc pas si récentes. Elles furent d’ailleurs précédées par un autre</span></div>
+<div style="position:absolute;left:70.82px;top:293.85px" class="cls_005"><span class="cls_005">mouvement, celui des </span><span class="cls_007">humanities computing</span><span class="cls_005">, les humanités assistées par l’ordinateur. Certains champs</span></div>
+<div style="position:absolute;left:70.82px;top:308.37px" class="cls_005"><span class="cls_005">disciplinaires ont été ainsi particulièrement concernés par l’utilisation des outils informatiques pour</span></div>
+<div style="position:absolute;left:70.82px;top:323.01px" class="cls_005"><span class="cls_005">pratiquer de l’analyse de corpus, notamment les études littéraires et plus particulièrement les </span><span class="cls_007">english</span></div>
+<div style="position:absolute;left:70.82px;top:336.57px" class="cls_007"><span class="cls_007">studies</span><span class="cls_005"> afin de mettre en avant des concordances</span><span class="cls_008"><sup>14</sup></span><span class="cls_005">. Les </span><span class="cls_007">humanities computing</span><span class="cls_005"> ont dû intégrer deux</span></div>
+<div style="position:absolute;left:70.82px;top:352.05px" class="cls_005"><span class="cls_005">cultures différentes afin « d’apporter la rigueur et les méthodologies procédurales et systématiques de</span></div>
+<div style="position:absolute;left:70.82px;top:366.57px" class="cls_005"><span class="cls_005">désambiguïsation propres aux sciences dures pour répondre aux problèmes que les humanités ont</span></div>
+<div style="position:absolute;left:70.82px;top:380.13px" class="cls_005"><span class="cls_005">traités jusque-là de façon intuitive »</span><span class="cls_008"><sup>15</sup></span><span class="cls_005">. Les méthodes vont alors suivre les progrès réalisés dans les</span></div>
+<div style="position:absolute;left:70.82px;top:395.61px" class="cls_005"><span class="cls_005">techniques de traitement automatique du langage et de fouille de texte. Mais ce sont également les</span></div>
+<div style="position:absolute;left:70.82px;top:410.13px" class="cls_005"><span class="cls_005">évolutions du Web qui vont faire évoluer la nature des corpus, ainsi que les méthodes de description et</span></div>
+<div style="position:absolute;left:70.82px;top:424.65px" class="cls_005"><span class="cls_005">de balisage du texte, même si pour ce cas de figure, un langage dédié avait vu le jour dans les</span></div>
+<div style="position:absolute;left:70.82px;top:439.29px" class="cls_005"><span class="cls_005">années 1980 : la TEI (Text Encoding Initiative). La TEI est un langage standard pour l’encodage de</span></div>
+<div style="position:absolute;left:70.82px;top:453.81px" class="cls_005"><span class="cls_005">textes sous forme de balises. Elle s’inspire de logiques proches de SGML créé en 1986 et qui a inspiré</span></div>
+<div style="position:absolute;left:70.82px;top:468.35px" class="cls_005"><span class="cls_005">le HTML, langage de base du web et le XML, langage pivot pour la structuration des données. Elle a</span></div>
+<div style="position:absolute;left:70.82px;top:482.87px" class="cls_005"><span class="cls_005">permis le développement d’une communauté de pratiques active. La TEI repose désormais sur le XML</span></div>
+<div style="position:absolute;left:70.82px;top:497.39px" class="cls_005"><span class="cls_005">et demeure toujours un langage important pour décrire finement les différentes strates et interactions</span></div>
+<div style="position:absolute;left:70.82px;top:511.91px" class="cls_005"><span class="cls_005">dans un texte afin de faciliter son étude et les requêtes précises. Elle est le produit de discussions et de</span></div>
+<div style="position:absolute;left:70.82px;top:526.43px" class="cls_005"><span class="cls_005">travaux mettant en scène trois associations : Association for Computers and the Humanities (fondée en</span></div>
+<div style="position:absolute;left:70.82px;top:540.95px" class="cls_005"><span class="cls_005">1978),  Association  for  Computational  Linguistics,  et  Association  for  Literary  and  Linguistic</span></div>
+<div style="position:absolute;left:70.82px;top:555.47px" class="cls_005"><span class="cls_005">Computing. Parmi ses créateurs figurent notamment Lou Burnard, retraité de l’université d’Oxford qui</span></div>
+<div style="position:absolute;left:70.82px;top:569.15px" class="cls_005"><span class="cls_005">collabore actuellement avec des équipes françaises issues du très grand équipement Adonis</span><span class="cls_008"><sup>16</sup></span><span class="cls_005">.</span></div>
+<div style="position:absolute;left:84.98px;top:584.63px" class="cls_005"><span class="cls_005">À  la  suite  de  Roberto  Busa,  d’autres  chercheurs  se  sont  mis  à  utiliser  des  technologies</span></div>
+<div style="position:absolute;left:70.82px;top:599.15px" class="cls_005"><span class="cls_005">informatiques. Joseph Raben, professeur d’anglais au Queens College de New York, crée d’ailleurs à</span></div>
+<div style="position:absolute;left:70.82px;top:613.67px" class="cls_005"><span class="cls_005">cet effet en 1966 la revue scientifique </span><span class="cls_007">Computer and The Humanities. </span><span class="cls_005">L’objectif était de permettre aux</span></div>
+<div style="position:absolute;left:70.82px;top:628.19px" class="cls_005"><span class="cls_005">pionniers et notamment les jeunes chercheurs de pouvoir y publier leurs recherches innovantes.</span></div>
+<div style="position:absolute;left:70.82px;top:686.18px" class="cls_010"><span class="cls_010"><sup>12</sup></span><span class="cls_011">. L’association ADHO (Alliance of Digital Humanities Organizations) a créé d’ailleurs à son honneur le « Prix Busa » qui récompense tous</span></div>
+<div style="position:absolute;left:70.82px;top:695.90px" class="cls_011"><span class="cls_011">les trois ans un acteur méritant des </span><A HREF="http://fr.wikipedia.org/wiki/Humanit%C3%A9s_num%C3%A9riques">humanités numériques.</A> En 1998, le prix a été attribué à Roberto Busa lui-même.</div>
+<div style="position:absolute;left:70.82px;top:704.54px" class="cls_010"><span class="cls_010"><sup>13</sup></span><span class="cls_011">. Le projet Hidden Histories se concentre toutefois sur le monde anglo-saxon.</span></div>
+<div style="position:absolute;left:70.82px;top:713.78px" class="cls_010"><span class="cls_010"><sup>14</sup></span><span class="cls_011">. Pour le cas de l’histoire en France, voir le chapitre II.</span></div>
+<div style="position:absolute;left:70.82px;top:722.90px" class="cls_010"><span class="cls_010"><sup>15</sup></span><span class="cls_011">. Susan Hockey, « The histories of humanities computing », </span><span class="cls_012">in</span><span class="cls_011"> S. Schreibman S., R. Siemens, J. Unsworth (Éd.), </span><span class="cls_012">A Companion to Digital</span></div>
+<div style="position:absolute;left:70.82px;top:732.62px" class="cls_012"><span class="cls_012">Humanities</span><span class="cls_011">, Wiley-Blackwell, 2008.</span></div>
+<div style="position:absolute;left:70.82px;top:741.38px" class="cls_010"><span class="cls_010"><sup>16</sup></span><span class="cls_011">. Le TGE-Adonis est une infrastructure pour conférer à la recherche une ingénierie améliorée et des services performants. Le TGE a</span></div>
+<div style="position:absolute;left:70.82px;top:750.98px" class="cls_011"><span class="cls_011">fusionné avec Corpus IR pour devenir une nouvelle unité mixte de service : la nouvelle infrastructure Huma-Num qui devient une très grande</span></div>
+<div style="position:absolute;left:70.82px;top:760.22px" class="cls_011"><span class="cls_011">infrastructure de recherche (TGIR) dédiée aux humanités numériques.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:2553px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="a5893e00-6932-11eb-8b25-0cc47a792c0a_id_a5893e00-6932-11eb-8b25-0cc47a792c0a_files/background04.jpg" width=595 height=841></div>
+<div style="position:absolute;left:84.98px;top:68.80px" class="cls_005"><span class="cls_005">À la fin des années 1970 et au début des années 1980, un logiciel comme COCOA basé sur le</span></div>
+<div style="position:absolute;left:70.82px;top:82.48px" class="cls_005"><span class="cls_005">langage Fortran</span><span class="cls_008"><sup>17</sup></span><span class="cls_005">, connut un certain succès, car il permettait de mesurer les occurrences et de</span></div>
+<div style="position:absolute;left:70.82px;top:97.98px" class="cls_005"><span class="cls_005">construire des analyses de concordances. La constitution de corpus numérisés commence à prendre de</span></div>
+<div style="position:absolute;left:70.82px;top:112.50px" class="cls_005"><span class="cls_005">l’essor et déjà la nécessité de conserver les travaux réalisés requiert la constitution d’un archivage</span></div>
+<div style="position:absolute;left:70.82px;top:127.02px" class="cls_005"><span class="cls_005">dédié avec le projet OTA (Oxford Text Archive) en 1976. L’objectif est à la fois de conserver et autant</span></div>
+<div style="position:absolute;left:70.82px;top:141.54px" class="cls_005"><span class="cls_005">que possible de rendre accessible ces corpus à un grand nombre de chercheurs. Les corpus restent</span></div>
+<div style="position:absolute;left:70.82px;top:156.06px" class="cls_005"><span class="cls_005">néanmoins restreints et le besoin de constituer de plus amples collections se fait sentir. C’est le cas du</span></div>
+<div style="position:absolute;left:70.82px;top:169.62px" class="cls_005"><span class="cls_005">projet de Théodore Brunner</span><span class="cls_008"><sup>18</sup></span><span class="cls_005"> qui cherche à rassembler les principaux textes de l’antiquité grecque</span></div>
+<div style="position:absolute;left:70.82px;top:185.10px" class="cls_005"><span class="cls_005">depuis Homère au sein du projet Thesaurus Linguae Graecae hébergé initialement à l’université de</span></div>
+<div style="position:absolute;left:70.82px;top:199.74px" class="cls_005"><span class="cls_005">Californie d’Irvine. Les premiers centres commencent alors à voir le jour et les questions sur la</span></div>
+<div style="position:absolute;left:70.82px;top:214.26px" class="cls_005"><span class="cls_005">nécessité d’apprendre à coder émergent et suscitent des débats qui se poursuivent encore aujourd’hui,</span></div>
+<div style="position:absolute;left:70.82px;top:228.78px" class="cls_005"><span class="cls_005">avec les discussions récurrentes sur la maîtrise des fondamentaux pour chaque discipline.</span></div>
+<div style="position:absolute;left:84.98px;top:243.30px" class="cls_005"><span class="cls_005">Les années 1980 marquent le tournant de l’informatique domestique qui change les méthodes et les</span></div>
+<div style="position:absolute;left:70.82px;top:257.82px" class="cls_005"><span class="cls_005">pratiques des chercheurs. Les interfaces graphiques d’Apple sont plus séduisantes que celles de</span></div>
+<div style="position:absolute;left:70.82px;top:272.37px" class="cls_005"><span class="cls_005">Microsoft et surtout les chercheurs peuvent utiliser le logiciel Hypercard qui leur permet de créer des</span></div>
+<div style="position:absolute;left:70.82px;top:286.89px" class="cls_005"><span class="cls_005">hypertextes entre fiches. Le Perseus Project19, dont l’objectif est de constituer une bibliothèque</span></div>
+<div style="position:absolute;left:70.82px;top:301.41px" class="cls_005"><span class="cls_005">numérique de travaux sur la Grèce antique, sera ainsi délivré à l’utilisateur final sous cette forme. Lou</span></div>
+<div style="position:absolute;left:70.82px;top:314.97px" class="cls_005"><span class="cls_005">Burnard</span><span class="cls_008"><sup>20</sup></span><span class="cls_005"> considère les années 1980 comme l’avènement des gadgets qui ont permis un début de</span></div>
+<div style="position:absolute;left:70.82px;top:330.57px" class="cls_005"><span class="cls_005">démocratisation de l’informatique, offrant la possibilité aux institutions scolaires de s’emparer du sujet</span></div>
+<div style="position:absolute;left:70.82px;top:345.09px" class="cls_005"><span class="cls_005">pour enseigner les langages LOGO et BASIC. Incontestablement, les outils techniques ont fait évoluer</span></div>
+<div style="position:absolute;left:70.82px;top:359.61px" class="cls_005"><span class="cls_005">les pratiques et les mentalités ainsi que les compétences associées.</span></div>
+<div style="position:absolute;left:84.98px;top:374.13px" class="cls_005"><span class="cls_005">Évidemment, les pratiques de messageries électroniques et l’avènement du Web vont contribuer au</span></div>
+<div style="position:absolute;left:70.82px;top:388.65px" class="cls_005"><span class="cls_005">développement des projets et aux facilités d’échanges. La liste Humanist, créée en 1987 par Willard</span></div>
+<div style="position:absolute;left:70.82px;top:402.21px" class="cls_005"><span class="cls_005">McCarty, constitue alors un « séminaire électronique »</span><span class="cls_008"><sup>21</sup></span><span class="cls_005">, c’est-à-dire une communauté de pratiques</span></div>
+<div style="position:absolute;left:70.82px;top:417.69px" class="cls_005"><span class="cls_005">active autour d’une liste de diffusion. Dans cette dynamique de partage est alors édité l’ouvrage</span></div>
+<div style="position:absolute;left:70.82px;top:432.21px" class="cls_007"><span class="cls_007">Humanities Computing Yearbook (HCY) </span><span class="cls_005">qui parût durant plusieurs années et qui compta jusqu’à 700</span></div>
+<div style="position:absolute;left:70.82px;top:446.85px" class="cls_005"><span class="cls_005">pages pour faire le point sur les avancées, débats et méthodes dans le domaine des humanités assistées</span></div>
+<div style="position:absolute;left:70.82px;top:461.39px" class="cls_005"><span class="cls_005">par ordinateur. Initialement sur papier, il s’est transformé en banque de données aisément diffusable et</span></div>
+<div style="position:absolute;left:70.82px;top:475.91px" class="cls_005"><span class="cls_005">facilitant la recherche d’informations. La pratique du Web et l’apparition du premier navigateur</span></div>
+<div style="position:absolute;left:70.82px;top:490.43px" class="cls_005"><span class="cls_005">Mosaic poussent les chercheurs à publier sur ce nouvel espace, même si le côté peu structuré du Web,</span></div>
+<div style="position:absolute;left:70.82px;top:504.95px" class="cls_005"><span class="cls_005">du fait d’un langage HTML trop simple, est parfois sujet à critique du côté des spécialistes de la TEI,</span></div>
+<div style="position:absolute;left:70.82px;top:519.47px" class="cls_005"><span class="cls_005">qui souhaiteraient une meilleure structuration des contenus. Les premières réflexions au sujet de</span></div>
+<div style="position:absolute;left:70.82px;top:533.99px" class="cls_005"><span class="cls_005">l’édition électronique se font jour avec des applications dont beaucoup ne sont pas passées à la</span></div>
+<div style="position:absolute;left:70.82px;top:548.51px" class="cls_005"><span class="cls_005">postérité. Les liaisons avec l’archivistique s’opèrent alors, tant le mot « archive » devient fréquemment</span></div>
+<div style="position:absolute;left:70.82px;top:563.15px" class="cls_005"><span class="cls_005">utilisé pour définir des projets de bibliothèques numériques et de contenus en ligne. Le mot est</span></div>
+<div style="position:absolute;left:70.82px;top:577.67px" class="cls_005"><span class="cls_005">pratique, car il désigne davantage la mise à disposition de contenus sans que cela ne s’accompagne</span></div>
+<div style="position:absolute;left:70.82px;top:591.23px" class="cls_005"><span class="cls_005">nécessairement d’une réelle valeur ajoutée, comme avec le projet William Blake Archive</span><span class="cls_008"><sup>22</sup></span><span class="cls_005">.</span></div>
+<div style="position:absolute;left:84.98px;top:606.71px" class="cls_005"><span class="cls_005">L’intégration de ces nouvelles tendances se remarque par la présence d’intitulés dans les cours et</span></div>
+<div style="position:absolute;left:70.82px;top:621.23px" class="cls_005"><span class="cls_005">les diplômes. Le King’s College de Londres fut ainsi parmi les premiers à développer des diplômes</span></div>
+<div style="position:absolute;left:70.82px;top:635.75px" class="cls_005"><span class="cls_005">orientés vers les </span><span class="cls_007">humanities computing</span><span class="cls_005">. C’est d’ailleurs sans surprise le même établissement qui a</span></div>
+<div style="position:absolute;left:70.82px;top:650.30px" class="cls_005"><span class="cls_005">donné une forte orientation </span><span class="cls_007">digital humanities</span><span class="cls_005"> à ces diplômes en sciences humaines et sociales.</span></div>
+<div style="position:absolute;left:70.82px;top:695.42px" class="cls_010"><span class="cls_010"><sup>17</sup></span><span class="cls_011">. Langage informatique développé dans les années 50 par IBM et principalement dédié à des projets et applications scientifiques.</span></div>
+<div style="position:absolute;left:70.82px;top:704.54px" class="cls_010"><span class="cls_010"><sup>18</sup></span><span class="cls_011">. T. F. Brunner,</span></div>
+<div style="position:absolute;left:133.21px;top:705.02px" class="cls_011"><span class="cls_011">« Classics and the Computer :  The History of a Relationship », </span><span class="cls_012">in</span><span class="cls_011"> J. Solomon</span></div>
+<div style="position:absolute;left:413.82px;top:705.02px" class="cls_011"><span class="cls_011">(dir.), </span><span class="cls_012">Accessing Antiquity : The</span></div>
+<div style="position:absolute;left:70.82px;top:714.26px" class="cls_012"><span class="cls_012">Computerization of Classical Studies</span><span class="cls_011">, University of Arizona Press, 1993, p. 10-33.</span></div>
+<div style="position:absolute;left:70.82px;top:722.90px" class="cls_010"><span class="cls_010"><sup>19</sup></span><span class="cls_011">. Le projet et ses ressources sont actuellement consultables sur <A HREF="http://www.perseus.tufts.edu/hopper./">www.perseus.tufts.edu/hopper.</A> </span></div>
+<div style="position:absolute;left:70.82px;top:732.14px" class="cls_010"><span class="cls_010"><sup>20</sup></span><span class="cls_011">. Lou Burnard, « Du literary and linguistic computing aux</span><span class="cls_012"> digital humanities</span><span class="cls_011"> : retour sur 40 ans de relations entre sciences humaines et</span></div>
+<div style="position:absolute;left:70.82px;top:741.86px" class="cls_011"><span class="cls_011">informatique », </span><span class="cls_012">Read / Write Book 2 : Une introduction aux humanités numériques</span><span class="cls_011">, OpenEdition Press, 2012, p. 45-58.</span></div>
+<div style="position:absolute;left:70.82px;top:750.50px" class="cls_010"><span class="cls_010"><sup>21</sup></span><span class="cls_011">. Cette expression continue d’être conservée pour définir la liste qui est toujours modérée par Willard McCarty lui-même.</span></div>
+<div style="position:absolute;left:70.82px;top:759.74px" class="cls_010"><span class="cls_010"><sup>22</sup></span><span class="cls_011">. William Blake Archive (<A HREF="http://www.blakearchive.org/blake/">www.blakearchive.org/blake</A>).</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:3404px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="a5893e00-6932-11eb-8b25-0cc47a792c0a_id_a5893e00-6932-11eb-8b25-0cc47a792c0a_files/background05.jpg" width=595 height=841></div>
+<div style="position:absolute;left:70.82px;top:68.80px" class="cls_005"><span class="cls_005">Toutefois, il est possible de trouver d’autres préfigurations plus anciennes, notamment en Italie avec</span></div>
+<div style="position:absolute;left:70.82px;top:82.48px" class="cls_005"><span class="cls_005">des diplômes mêlant étroitement informatique et SHS (</span><span class="cls_007">informatica umanistica</span><span class="cls_005">)</span><span class="cls_008"><sup>23</sup></span><span class="cls_005">.</span></div>
+<div style="position:absolute;left:84.98px;top:97.98px" class="cls_005"><span class="cls_005">La question disciplinaire devient aussi centrale : faut-il une discipline à part ou doit-on plutôt</span></div>
+<div style="position:absolute;left:70.82px;top:111.54px" class="cls_005"><span class="cls_005">concevoir un espace interdisciplinaire autour de méthodes comme le décrit Willard McCarty</span><span class="cls_008"><sup>24</sup></span><span class="cls_005"> ?</span></div>
+<div style="position:absolute;left:70.82px;top:141.54px" class="cls_006"><span class="cls_006">4— La montée en puissance des corpus numériques et des bases de données</span></div>
+<div style="position:absolute;left:84.98px;top:162.06px" class="cls_005"><span class="cls_005">La constitution progressive des bases de données d’articles numériques</span><span class="cls_008"><sup>25</sup></span><span class="cls_005"> marque également un</span></div>
+<div style="position:absolute;left:70.82px;top:177.54px" class="cls_005"><span class="cls_005">important tournant documentaire, ainsi qu’une relation espace-temps fortement modifiée pour les</span></div>
+<div style="position:absolute;left:70.82px;top:192.06px" class="cls_005"><span class="cls_005">chercheurs. Cette accélération de la disponibilité documentaire n’est pas sans conséquence. La</span></div>
+<div style="position:absolute;left:70.82px;top:206.70px" class="cls_005"><span class="cls_005">réduction du délai d’obtention d’un article permet de ne pas réfréner un besoin urgent de consultation</span></div>
+<div style="position:absolute;left:70.82px;top:221.22px" class="cls_005"><span class="cls_005">et évite des attentes pénibles, voire décevantes, lorsque l’article qui arrive au final ne correspond que</span></div>
+<div style="position:absolute;left:70.82px;top:235.74px" class="cls_005"><span class="cls_005">peu au besoin d’information initial. La constitution de gisements d’articles en ligne accessibles grâce à</span></div>
+<div style="position:absolute;left:70.82px;top:250.26px" class="cls_005"><span class="cls_005">des abonnements parfois onéreux payés par les bibliothèques s’avère déjà une étape cruciale, car</span></div>
+<div style="position:absolute;left:70.82px;top:264.78px" class="cls_005"><span class="cls_005">l’enjeu de l’accessibilité représente une phase incontournable dans la réalisation des humanités</span></div>
+<div style="position:absolute;left:70.82px;top:279.33px" class="cls_005"><span class="cls_005">numériques. La prolongation de cette accessibilité via des plateformes d’archives ouvertes l’accroît</span></div>
+<div style="position:absolute;left:70.82px;top:293.85px" class="cls_005"><span class="cls_005">encore, notamment pour toucher un public différent des chercheurs professionnels.</span></div>
+<div style="position:absolute;left:84.98px;top:308.37px" class="cls_005"><span class="cls_005">La masse d’informations et d’articles disponibles en quelques clics constitue déjà une mutation</span></div>
+<div style="position:absolute;left:70.82px;top:323.01px" class="cls_005"><span class="cls_005">importante. Elle permet indubitablement une accélération des processus d’écriture scientifique du fait</span></div>
+<div style="position:absolute;left:70.82px;top:337.53px" class="cls_005"><span class="cls_005">d’une diminution des temps d’accès à la documentation. De la même manière, il est plus aisé pour le</span></div>
+<div style="position:absolute;left:70.82px;top:352.05px" class="cls_005"><span class="cls_005">chercheur  d’effectuer  des  lectures  stratégiques  d’un  article  ou d’un  ouvrage  par  la recherche</span></div>
+<div style="position:absolute;left:70.82px;top:366.57px" class="cls_005"><span class="cls_005">d’occurrences d’un mot ou d’un concept. Plus les articles sont numérisés en mode texte, plus la</span></div>
+<div style="position:absolute;left:70.82px;top:381.09px" class="cls_005"><span class="cls_005">recherche se trouve facilitée pour repérer des éléments dignes d’intérêt, tandis qu’une lecture</span></div>
+<div style="position:absolute;left:70.82px;top:395.61px" class="cls_005"><span class="cls_005">exhaustive aurait été beaucoup plus longue et, surtout, plus incertaine. Dès lors il ne s’agit plus de</span></div>
+<div style="position:absolute;left:70.82px;top:410.13px" class="cls_005"><span class="cls_005">pouvoir lire de manière totale un ouvrage, mais de pouvoir également réaliser des recherches à</span></div>
+<div style="position:absolute;left:70.82px;top:424.65px" class="cls_005"><span class="cls_005">l’intérieur du texte. On peut plus aisément repérer des concordances, des similitudes dans les usages et</span></div>
+<div style="position:absolute;left:70.82px;top:439.29px" class="cls_005"><span class="cls_005">on peut réaliser des statistiques davantage précises. De nouvelles requêtes sont rendues possibles, le</span></div>
+<div style="position:absolute;left:70.82px;top:453.81px" class="cls_005"><span class="cls_005">chercheur évolue dans une philosophie qu’exprime une nouvelle fois parfaitement Lou Burnard :</span></div>
+<div style="position:absolute;left:70.82px;top:467.39px" class="cls_005"><span class="cls_005">« J’avais l’habitude de lire des textes, désormais j’apprends les outils pour jouer avec. »</span><span class="cls_008"><sup>26</sup></span><span class="cls_005"> Dès lors, les</span></div>
+<div style="position:absolute;left:70.82px;top:482.87px" class="cls_005"><span class="cls_005">outils des chercheurs en sciences humaines et sociales sont en évolution très nette depuis plusieurs</span></div>
+<div style="position:absolute;left:70.82px;top:497.39px" class="cls_005"><span class="cls_005">décennies. Les environnements personnels de travail sont de plus en plus numériques.</span></div>
+<div style="position:absolute;left:84.98px;top:511.91px" class="cls_005"><span class="cls_005">De plus en plus, la production académique devient nativement digitale, car les chercheurs écrivent</span></div>
+<div style="position:absolute;left:70.82px;top:526.43px" class="cls_005"><span class="cls_005">à partir de logiciels de traitement de texte depuis bien longtemps et le développement de la</span></div>
+<div style="position:absolute;left:70.82px;top:540.95px" class="cls_005"><span class="cls_005">documentation numérique disponible a accru également les facilités d’échanges et de partage de</span></div>
+<div style="position:absolute;left:70.82px;top:555.47px" class="cls_005"><span class="cls_005">documents ou tout au moins leur signalement. C’est également dans ce cadre que la pratique du blog</span></div>
+<div style="position:absolute;left:70.82px;top:570.11px" class="cls_005"><span class="cls_005">ou carnet de recherche s’est également constituée. Longtemps marginale, elle gagne lentement en</span></div>
+<div style="position:absolute;left:70.82px;top:584.63px" class="cls_005"><span class="cls_005">légitimité.</span></div>
+<div style="position:absolute;left:70.82px;top:613.67px" class="cls_006"><span class="cls_006">5— Le tournant des humanités numériques</span></div>
+<div style="position:absolute;left:84.98px;top:635.15px" class="cls_005"><span class="cls_005">Le glissement progressif vers l’expression </span><span class="cls_007">digital humanities</span><span class="cls_005"> est particulièrement visible dans</span></div>
+<div style="position:absolute;left:70.82px;top:649.70px" class="cls_005"><span class="cls_005">l’ouvrage </span><span class="cls_007">A Companion to Digital Humanities</span><span class="cls_005">, dirigé par John Unsworth, Ray Siemens et Susan</span></div>
+<div style="position:absolute;left:70.82px;top:664.22px" class="cls_005"><span class="cls_005">Schreibman, ce  qui va  populariser le terme et par la même occasion impulser une nouvelle</span></div>
+<div style="position:absolute;left:70.82px;top:722.90px" class="cls_010"><span class="cls_010"><sup>23</sup></span><span class="cls_011">. Sur ces aspects, voir notamment les travaux de Domenico Fiormonte sur son blog ou sur Infolet.it.</span></div>
+<div style="position:absolute;left:70.82px;top:732.14px" class="cls_010"><span class="cls_010"><sup>24</sup></span><span class="cls_011">. Willard McCarty, </span><span class="cls_012">Humanities Computing</span><span class="cls_011">, Palgrave Macmillan, 2005.</span></div>
+<div style="position:absolute;left:70.82px;top:741.38px" class="cls_010"><span class="cls_010"><sup>25</sup></span><span class="cls_011">. Un rôle bien démontré dans Dalbello M, « A genealogy of digital humanities », </span><span class="cls_012">Journal of Documentation</span><span class="cls_011">, vol. 67, n° 3, 2011, p. 480-</span></div>
+<div style="position:absolute;left:70.82px;top:750.98px" class="cls_011"><span class="cls_011">506.</span></div>
+<div style="position:absolute;left:70.82px;top:759.74px" class="cls_010"><span class="cls_010"><sup>26</sup></span><span class="cls_011">. Lou Burnard, </span><span class="cls_012">op. cit.</span><span class="cls_011">, p. 52.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:4255px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="a5893e00-6932-11eb-8b25-0cc47a792c0a_id_a5893e00-6932-11eb-8b25-0cc47a792c0a_files/background06.jpg" width=595 height=841></div>
+<div style="position:absolute;left:70.82px;top:67.84px" class="cls_005"><span class="cls_005">dynamique</span><span class="cls_008"><sup>27</sup></span><span class="cls_005">. C’est aussi une volonté de mieux comprendre les évolutions en cours et ne plus</span></div>
+<div style="position:absolute;left:70.82px;top:83.46px" class="cls_005"><span class="cls_005">considérer les outils informatiques comme de simples outils permettant de mieux analyser les corpus.</span></div>
+<div style="position:absolute;left:70.82px;top:97.98px" class="cls_005"><span class="cls_005">Il  s’agit  également  d’un  rééquilibrage  entre  la  raison computationnelle  et  la  raison  humaine,</span></div>
+<div style="position:absolute;left:70.82px;top:112.50px" class="cls_005"><span class="cls_005">l’expression marque davantage une fusion qu’une juxtaposition, comme c’était le cas pour </span><span class="cls_007">humanities</span></div>
+<div style="position:absolute;left:70.82px;top:127.02px" class="cls_007"><span class="cls_007">computing. </span><span class="cls_005">En effet</span><span class="cls_007">, </span><span class="cls_005">malgré quelques pionniers, la vision dominante demeurait celle d’une délégation</span></div>
+<div style="position:absolute;left:70.82px;top:141.54px" class="cls_005"><span class="cls_005">à l’ingénierie informatique pour tout ce qui relevait des questions de développement et de gestion des</span></div>
+<div style="position:absolute;left:70.82px;top:156.06px" class="cls_005"><span class="cls_005">logiciels employés. Désormais, la montée en puissance du numérique touche toutes les phases du</span></div>
+<div style="position:absolute;left:70.82px;top:170.58px" class="cls_005"><span class="cls_005">travail et de la production scientifique, y compris en sciences humaines et sociales. Mais cette</span></div>
+<div style="position:absolute;left:70.82px;top:185.10px" class="cls_005"><span class="cls_005">convergence va plus loin, tant il s’agit de faire dialoguer différentes techniques et méthodes au sein</span></div>
+<div style="position:absolute;left:70.82px;top:199.74px" class="cls_005"><span class="cls_005">même des humanités et des sciences humaines et sociales. Ce point est particulièrement mis en avant</span></div>
+<div style="position:absolute;left:70.82px;top:213.30px" class="cls_005"><span class="cls_005">par  le  texte </span><span class="cls_007"> A  Digital  Humanities  Manifesto</span><span class="cls_014"><sup>28</sup></span><span class="cls_005">  et  son  prolongement </span><span class="cls_007"> The  Digital  Humanities</span></div>
+<div style="position:absolute;left:70.82px;top:228.78px" class="cls_007"><span class="cls_007">Manifesto 2.0.</span></div>
+<div style="position:absolute;left:84.98px;top:243.30px" class="cls_005"><span class="cls_005">L’essor du terme </span><span class="cls_007">digital humanities</span><span class="cls_005"> est progressif et supplante dorénavant complètement celui</span></div>
+<div style="position:absolute;left:70.82px;top:257.82px" class="cls_005"><span class="cls_005">d’</span><span class="cls_007">humanities computing</span><span class="cls_005">. La fréquence d’utilisation de l’expression </span><span class="cls_007">digital humanities</span><span class="cls_005"> peut être</span></div>
+<div style="position:absolute;left:70.82px;top:272.37px" class="cls_005"><span class="cls_005">symbolisée par une visualisation proposé par l’outil </span><span class="cls_007">Google Ngram</span><span class="cls_005"> qui effectue des requête sur les</span></div>
+<div style="position:absolute;left:70.82px;top:286.89px" class="cls_005"><span class="cls_005">occurrences d’une expression dans les ouvrages numérisés de Google Livres (ou Google Books). Si</span></div>
+<div style="position:absolute;left:70.82px;top:301.41px" class="cls_007"><span class="cls_007">humanities computing </span><span class="cls_005">reste l’expression majoritaire en 2008 (date des dernières données consultables)</span></div>
+<div style="position:absolute;left:70.82px;top:314.97px" class="cls_005"><span class="cls_005">l’expression </span><span class="cls_007">digital humanities </span><span class="cls_005">monte en flèche</span><span class="cls_008"><sup>29</sup></span><span class="cls_005">.</span></div>
+<div style="position:absolute;left:101.06px;top:544.91px" class="cls_015"><span class="cls_015">Image 1 :</span><span class="cls_016"> </span><span class="cls_015">Comparaison de l’utilisation de </span><span class="cls_016">digital humanities</span><span class="cls_015"> et </span><span class="cls_016">humanities computing </span><span class="cls_015">sur N’gram</span></div>
+<div style="position:absolute;left:84.98px;top:572.39px" class="cls_005"><span class="cls_005">Un autre outil, Google Trends, basé sur les requêtes produites par les usagers du moteur Google,</span></div>
+<div style="position:absolute;left:70.82px;top:586.91px" class="cls_005"><span class="cls_005">confirme cette tendance. Les résultats montrent une prise d’intérêt vers 2005 et une montée continue,</span></div>
+<div style="position:absolute;left:70.82px;top:601.43px" class="cls_005"><span class="cls_005">tandis   que   celle   d’</span><span class="cls_007">humanities   computing</span><span class="cls_005">   tend  à   décliner  après  un  pic   autour  de</span></div>
+<div style="position:absolute;left:499.84px;top:601.43px" class="cls_005"><span class="cls_005">2005.</span></div>
+<div style="position:absolute;left:70.82px;top:615.95px" class="cls_005"><span class="cls_005">Incontestablement depuis 2005, à l’heure de l’avènement de ce qui deviendra le Web 2.0, un tournant</span></div>
+<div style="position:absolute;left:70.82px;top:630.47px" class="cls_005"><span class="cls_005">semble s’être produit.</span></div>
+<div style="position:absolute;left:70.82px;top:722.90px" class="cls_010"><span class="cls_010"><sup>27</sup></span><span class="cls_011">. L’expression est utilisée pour la première fois dans les années 1990, ce que montre d’ailleurs une recherche sur l’outil de Google, Ngram</span></div>
+<div style="position:absolute;left:70.82px;top:732.62px" class="cls_011"><span class="cls_011">Viewer, qui permet d’effectuer des recherches sur les contenus numérisés de Google Books.</span></div>
+<div style="position:absolute;left:70.82px;top:741.38px" class="cls_010"><span class="cls_010"><sup>28</sup></span><span class="cls_011">. </span><span class="cls_012">Cf.</span><span class="cls_011"> « A Digital Humanities Manifesto », 15 décembre 2008, disponible en ligne sur manifesto.humanities.ucla.edu.</span></div>
+<div style="position:absolute;left:70.82px;top:750.50px" class="cls_010"><span class="cls_010"><sup>29</sup></span><span class="cls_011">. Toutefois, les imprécisions et les erreurs qui émaillent les métadonnées et le fait que Google Ngram soit sensible à la graphie obligent à</span></div>
+<div style="position:absolute;left:70.82px;top:760.22px" class="cls_011"><span class="cls_011">une certaine distance.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5106px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="a5893e00-6932-11eb-8b25-0cc47a792c0a_id_a5893e00-6932-11eb-8b25-0cc47a792c0a_files/background07.jpg" width=595 height=841></div>
+<div style="position:absolute;left:86.78px;top:562.91px" class="cls_015"><span class="cls_015">Image 2 : Comparaison de l’utilisation de </span><span class="cls_016">digital humanities</span><span class="cls_015"> et </span><span class="cls_016">humanities computing</span><span class="cls_015"> sur Google Trends</span></div>
+<div style="position:absolute;left:84.98px;top:590.63px" class="cls_017"><span class="cls_017">• THATCamp, les points forts des DH</span></div>
+<div style="position:absolute;left:84.98px;top:604.91px" class="cls_005"><span class="cls_005">Parmi les points marquants du mouvement figure l’évènementialisation autour des journées</span></div>
+<div style="position:absolute;left:70.82px;top:619.43px" class="cls_005"><span class="cls_005">d’études, colloques et universités d’été qui se déroulent régulièrement autour des</span><span class="cls_007"> digital humanities</span><span class="cls_005">.</span></div>
+<div style="position:absolute;left:70.82px;top:633.95px" class="cls_005"><span class="cls_005">Parmi ces évènements figurent les désormais fameux THATCamp (The Humanities And Technology</span></div>
+<div style="position:absolute;left:70.82px;top:648.62px" class="cls_005"><span class="cls_005">Camp). Issus d’une réflexion sur le fait que les colloques sont trop conventionnels et qu’ils peuvent</span></div>
+<div style="position:absolute;left:70.82px;top:663.14px" class="cls_005"><span class="cls_005">gérer de l’ennui lors des sessions officielles, l’objectif a été d’envisager une non-conférence, c’est-à-</span></div>
+<div style="position:absolute;left:70.82px;top:677.66px" class="cls_005"><span class="cls_005">dire des temps d’expression moins formalisés et plus ouverts qui donnent à chacun des participants</span></div>
+<div style="position:absolute;left:70.82px;top:692.18px" class="cls_005"><span class="cls_005">l’opportunité de s’exprimer. Inspiré par les phénomènes des BarCamps30, le concept a été créé par le</span></div>
+<div style="position:absolute;left:70.82px;top:706.70px" class="cls_005"><span class="cls_005">Roy Rosenzweig </span><A HREF="https://en.wikipedia.org/wiki/Center_for_History_and_New_Media">Center for History and New Media</A><span class="cls_005"> à l’université <A HREF="https://en.wikipedia.org/wiki/George_Mason_University">George Mason</A> en 2008, où s’y est</div>
+<div style="position:absolute;left:70.82px;top:741.38px" class="cls_010"><span class="cls_010"><sup>30</sup></span><span class="cls_011">. Les BarCamps se sont constitués en tant que modèle de non-conférence dans les territoires des professionnels de l’informatique. Créé en</span></div>
+<div style="position:absolute;left:70.82px;top:750.98px" class="cls_011"><span class="cls_011">2005, le concept s’inspire du FooCamp (ou « non-conférence »), événement organisé par l’éditeur de presse informatique Tim O’Reilly, mais</span></div>
+<div style="position:absolute;left:70.82px;top:760.22px" class="cls_011"><span class="cls_011">qui ne fonctionne que sur invitation.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5957px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="a5893e00-6932-11eb-8b25-0cc47a792c0a_id_a5893e00-6932-11eb-8b25-0cc47a792c0a_files/background08.jpg" width=595 height=841></div>
+<div style="position:absolute;left:70.82px;top:68.80px" class="cls_005"><span class="cls_005">déroulé le premier évènement de ce type. Depuis leur création, les THATCamps connaissent un succès</span></div>
+<div style="position:absolute;left:70.82px;top:83.46px" class="cls_005"><span class="cls_005">indéniable avec des conférences régulières à différents endroits et avec des orientations variées à</span></div>
+<div style="position:absolute;left:70.82px;top:97.98px" class="cls_005"><span class="cls_005">chaque fois. Même si le THATCamp souhaite se démarquer du colloque ou de la journée d’études</span></div>
+<div style="position:absolute;left:70.82px;top:112.50px" class="cls_005"><span class="cls_005">classiques, le dispositif n’est pas pour autant en dehors de toute institutionnalisation et d’édification de</span></div>
+<div style="position:absolute;left:70.82px;top:127.02px" class="cls_005"><span class="cls_005">règles d’usages. Paradoxalement, le credo de la non-organisation réclame au contraire une capacité</span></div>
+<div style="position:absolute;left:70.82px;top:141.54px" class="cls_005"><span class="cls_005">d’organisation réelle qui puisse s’ajuster le plus finement possible aux besoins. Reposant sur une</span></div>
+<div style="position:absolute;left:70.82px;top:156.06px" class="cls_005"><span class="cls_005">logique davantage participante, les THATCamps sont davantage orientés dans une logique d’échanges</span></div>
+<div style="position:absolute;left:70.82px;top:170.58px" class="cls_005"><span class="cls_005">et de formation et donc de participation que dans une logique traditionnelle basée sur une conférence</span></div>
+<div style="position:absolute;left:70.82px;top:185.10px" class="cls_005"><span class="cls_005">qui laisse peu de place aux questions. C’est aussi la volonté d’offrir à chaque inscrit une réelle</span></div>
+<div style="position:absolute;left:70.82px;top:199.74px" class="cls_005"><span class="cls_005">possibilité de participer et de s’exprimer dans le cadre d’ateliers. Cet esprit nouveau devrait continuer</span></div>
+<div style="position:absolute;left:70.82px;top:214.26px" class="cls_005"><span class="cls_005">à se diffuser progressivement de sorte à introduire de nouvelles façons de travailler ensemble, y</span></div>
+<div style="position:absolute;left:70.82px;top:228.78px" class="cls_005"><span class="cls_005">compris dans l’enseignement en incitant davantage les étudiants à participer à la réalisation de projets.</span></div>
+<div style="position:absolute;left:84.98px;top:258.06px" class="cls_017"><span class="cls_017">• Former et informer au-delà</span></div>
+<div style="position:absolute;left:84.98px;top:272.37px" class="cls_005"><span class="cls_005">La présence de formations dédiées aux humanités digitales est également notable à la fois sur le</span></div>
+<div style="position:absolute;left:70.82px;top:286.89px" class="cls_005"><span class="cls_005">plan institutionnel avec des formations intégrées dans les cursus, mais aussi de manière différente via</span></div>
+<div style="position:absolute;left:70.82px;top:301.41px" class="cls_005"><span class="cls_005">des universités d’été spécifiques.</span></div>
+<div style="position:absolute;left:84.98px;top:315.93px" class="cls_005"><span class="cls_005">Il reste désormais à passer la barrière de la popularisation de l’expression pour toucher des publics</span></div>
+<div style="position:absolute;left:70.82px;top:330.57px" class="cls_005"><span class="cls_005">plus larges et pour faire évoluer les DH en dehors des seules universités. Les enjeux concernent</span></div>
+<div style="position:absolute;left:70.82px;top:345.09px" class="cls_005"><span class="cls_005">l’ensemble de l’éducation ainsi que l’évolution des lieux de culture et de savoir. L’histoire des</span></div>
+<div style="position:absolute;left:70.82px;top:359.61px" class="cls_005"><span class="cls_005">humanités numériques ou digitales va continuer à s’écrire. Une histoire qui est aussi celle des</span></div>
+<div style="position:absolute;left:70.82px;top:374.13px" class="cls_005"><span class="cls_005">techniques et des méthodes d’organisation des savoirs et de la pensée. Les humanités ont toujours été</span></div>
+<div style="position:absolute;left:70.82px;top:388.65px" class="cls_005"><span class="cls_005">d’essence technique, le numérique ne fait que le rappeler et le mettre en évidence. humanités de la</span></div>
+<div style="position:absolute;left:70.82px;top:403.17px" class="cls_005"><span class="cls_005">raison graphique avec le succès du codex et son épanouissement avec l’imprimerie, humanités</span></div>
+<div style="position:absolute;left:70.82px;top:417.69px" class="cls_005"><span class="cls_005">numériques ou digitales actuellement, humanités quantiques peut-être demain, peu importe l’évolution</span></div>
+<div style="position:absolute;left:70.82px;top:432.21px" class="cls_005"><span class="cls_005">de cette histoire. Il s’agit surtout de comprendre que nos cultures sont imprégnées de notre relation</span></div>
+<div style="position:absolute;left:70.82px;top:445.89px" class="cls_005"><span class="cls_005">avec les techniques</span><span class="cls_008"><sup>31</sup></span><span class="cls_005">. Même s’il y aura toujours des aspects pionniers et avant-gardistes dans les</span></div>
+<div style="position:absolute;left:70.82px;top:461.39px" class="cls_005"><span class="cls_005">humanités digitales, gageons que les humanités seront de plus en plus numériques tout simplement.</span></div>
+<div style="position:absolute;left:84.98px;top:475.91px" class="cls_005"><span class="cls_005">Le tableau ci-dessous propose une vision synthétique de l’évolution du phénomène de façon non</span></div>
+<div style="position:absolute;left:70.82px;top:490.43px" class="cls_005"><span class="cls_005">exhaustive bien évidemment. Il permet d’avoir quelques repères dans cette petite histoire qui vient</span></div>
+<div style="position:absolute;left:70.82px;top:504.95px" class="cls_005"><span class="cls_005">d’rtre retracée brièvement.</span></div>
+<div style="position:absolute;left:70.82px;top:759.74px" class="cls_010"><span class="cls_010"><sup>31</sup></span><span class="cls_011">. Julianna Nyhan et </span><span class="cls_012">al.</span><span class="cls_011">, « Oral History and The Hidden Histories Project », </span><span class="cls_012">Literary and Linguistic Computing, </span><span class="cls_011">2013.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:6808px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="a5893e00-6932-11eb-8b25-0cc47a792c0a_id_a5893e00-6932-11eb-8b25-0cc47a792c0a_files/background09.jpg" width=595 height=841></div>
+<div style="position:absolute;left:84.98px;top:126.06px" class="cls_017"><span class="cls_017">Tableau chronologique du rapport entre humanités et numérique</span><span class="cls_014"><sup>32</sup></span></div>
+<div style="position:absolute;left:76.22px;top:142.26px" class="cls_009"><span class="cls_009">Période</span></div>
+<div style="position:absolute;left:154.22px;top:142.26px" class="cls_009"><span class="cls_009">Exemples de personnes</span></div>
+<div style="position:absolute;left:255.05px;top:142.26px" class="cls_009"><span class="cls_009">Concepts principaux</span></div>
+<div style="position:absolute;left:347.23px;top:142.26px" class="cls_009"><span class="cls_009">Réalisations</span></div>
+<div style="position:absolute;left:439.39px;top:142.26px" class="cls_009"><span class="cls_009">Formes</span></div>
+<div style="position:absolute;left:154.22px;top:154.14px" class="cls_009"><span class="cls_009">emblématiques</span></div>
+<div style="position:absolute;left:439.39px;top:154.14px" class="cls_009"><span class="cls_009">documentaires</span></div>
+<div style="position:absolute;left:76.22px;top:166.62px" class="cls_009"><span class="cls_009">Prolégomènes</span></div>
+<div style="position:absolute;left:154.22px;top:166.62px" class="cls_009"><span class="cls_009">Paul Otlet</span></div>
+<div style="position:absolute;left:255.05px;top:166.62px" class="cls_009"><span class="cls_009">Document</span></div>
+<div style="position:absolute;left:347.23px;top:166.62px" class="cls_009"><span class="cls_009">Cartes perforées</span></div>
+<div style="position:absolute;left:439.39px;top:166.62px" class="cls_009"><span class="cls_009">Document</span></div>
+<div style="position:absolute;left:154.22px;top:178.50px" class="cls_009"><span class="cls_009">Vannevar Bush</span></div>
+<div style="position:absolute;left:255.05px;top:178.50px" class="cls_009"><span class="cls_009">Principes de</span></div>
+<div style="position:absolute;left:347.23px;top:178.50px" class="cls_009"><span class="cls_009">Cartes</span></div>
+<div style="position:absolute;left:439.39px;top:178.50px" class="cls_009"><span class="cls_009">Documentation</span></div>
+<div style="position:absolute;left:255.05px;top:190.38px" class="cls_009"><span class="cls_009">l’hypertexte</span></div>
+<div style="position:absolute;left:347.23px;top:190.38px" class="cls_009"><span class="cls_009">Memex (</span><span class="cls_018">as we may</span></div>
+<div style="position:absolute;left:439.39px;top:190.38px" class="cls_009"><span class="cls_009">Classement</span></div>
+<div style="position:absolute;left:255.05px;top:202.26px" class="cls_009"><span class="cls_009">Accès facilité à</span></div>
+<div style="position:absolute;left:347.23px;top:202.26px" class="cls_018"><span class="cls_018">think</span><span class="cls_009">)</span></div>
+<div style="position:absolute;left:439.39px;top:202.26px" class="cls_009"><span class="cls_009">Classifications</span></div>
+<div style="position:absolute;left:255.05px;top:214.14px" class="cls_009"><span class="cls_009">l’information</span></div>
+<div style="position:absolute;left:255.05px;top:226.02px" class="cls_009"><span class="cls_009">Description du</span></div>
+<div style="position:absolute;left:255.05px;top:237.90px" class="cls_009"><span class="cls_009">document</span></div>
+<div style="position:absolute;left:255.05px;top:249.78px" class="cls_009"><span class="cls_009">Abondance de</span></div>
+<div style="position:absolute;left:255.05px;top:261.66px" class="cls_009"><span class="cls_009">l’information</span></div>
+<div style="position:absolute;left:255.05px;top:273.57px" class="cls_009"><span class="cls_009">disponible</span></div>
+<div style="position:absolute;left:255.05px;top:285.57px" class="cls_009"><span class="cls_009">(notamment pour les</span></div>
+<div style="position:absolute;left:255.05px;top:297.45px" class="cls_009"><span class="cls_009">chercheurs)</span></div>
+<div style="position:absolute;left:255.05px;top:309.33px" class="cls_009"><span class="cls_009">Statistiques ?</span></div>
+<div style="position:absolute;left:76.22px;top:321.69px" class="cls_009"><span class="cls_009">1945 ± 1970</span></div>
+<div style="position:absolute;left:154.22px;top:321.69px" class="cls_009"><span class="cls_009">Roberto Busa</span></div>
+<div style="position:absolute;left:255.05px;top:321.69px" class="cls_009"><span class="cls_009">Recherche</span></div>
+<div style="position:absolute;left:347.23px;top:321.69px" class="cls_009"><span class="cls_009">Index Thomisticus</span></div>
+<div style="position:absolute;left:439.39px;top:321.69px" class="cls_009"><span class="cls_009">Concordances et</span></div>
+<div style="position:absolute;left:154.22px;top:333.57px" class="cls_009"><span class="cls_009">Theodore Brunner</span></div>
+<div style="position:absolute;left:255.05px;top:333.57px" class="cls_009"><span class="cls_009">Recherche</span></div>
+<div style="position:absolute;left:347.23px;top:333.57px" class="cls_009"><span class="cls_009">TLG</span></div>
+<div style="position:absolute;left:439.39px;top:333.57px" class="cls_009"><span class="cls_009">occurrences</span></div>
+<div style="position:absolute;left:255.05px;top:345.45px" class="cls_009"><span class="cls_009">contextuelle</span></div>
+<div style="position:absolute;left:439.39px;top:345.45px" class="cls_009"><span class="cls_009">Archives</span></div>
+<div style="position:absolute;left:439.39px;top:357.33px" class="cls_009"><span class="cls_009">Corpus</span></div>
+<div style="position:absolute;left:439.39px;top:369.21px" class="cls_009"><span class="cls_009">Bases de données</span></div>
+<div style="position:absolute;left:76.22px;top:381.69px" class="cls_009"><span class="cls_009">1980 ± début des</span></div>
+<div style="position:absolute;left:255.05px;top:381.69px" class="cls_009"><span class="cls_009">Hypertexte</span></div>
+<div style="position:absolute;left:347.23px;top:381.69px" class="cls_009"><span class="cls_009">The Perseus digital</span></div>
+<div style="position:absolute;left:439.39px;top:381.69px" class="cls_009"><span class="cls_009">Archives multimédias</span></div>
+<div style="position:absolute;left:76.22px;top:393.57px" class="cls_009"><span class="cls_009">années 1990</span></div>
+<div style="position:absolute;left:255.05px;top:393.57px" class="cls_009"><span class="cls_009">Numérisation</span></div>
+<div style="position:absolute;left:347.23px;top:393.57px" class="cls_009"><span class="cls_009">library</span></div>
+<div style="position:absolute;left:439.39px;top:393.57px" class="cls_009"><span class="cls_009">Banques de données</span></div>
+<div style="position:absolute;left:255.05px;top:405.45px" class="cls_009"><span class="cls_009">Document numérique</span></div>
+<div style="position:absolute;left:347.23px;top:405.45px" class="cls_009"><span class="cls_009">The Rossetti archive</span></div>
+<div style="position:absolute;left:255.05px;top:417.33px" class="cls_009"><span class="cls_009">Encodage (TEI)</span></div>
+<div style="position:absolute;left:347.23px;top:417.33px" class="cls_009"><span class="cls_009">The William Blake</span></div>
+<div style="position:absolute;left:255.05px;top:429.21px" class="cls_009"><span class="cls_009">Web (HTML)</span></div>
+<div style="position:absolute;left:347.23px;top:429.21px" class="cls_009"><span class="cls_009">archive</span></div>
+<div style="position:absolute;left:255.05px;top:441.09px" class="cls_009"><span class="cls_009">Arborescence (XML)</span></div>
+<div style="position:absolute;left:76.22px;top:465.47px" class="cls_009"><span class="cls_009">1996 ± début des</span></div>
+<div style="position:absolute;left:154.22px;top:465.47px" class="cls_009"><span class="cls_009">Willard McCarthy</span></div>
+<div style="position:absolute;left:255.05px;top:465.47px" class="cls_009"><span class="cls_009">Interdiscipline</span></div>
+<div style="position:absolute;left:347.23px;top:465.47px" class="cls_009"><span class="cls_009">Sites web de</span></div>
+<div style="position:absolute;left:439.39px;top:465.47px" class="cls_009"><span class="cls_009">CD-ROM</span></div>
+<div style="position:absolute;left:76.22px;top:477.35px" class="cls_009"><span class="cls_009">années 2000</span></div>
+<div style="position:absolute;left:347.23px;top:477.35px" class="cls_009"><span class="cls_009">chercheurs</span></div>
+<div style="position:absolute;left:347.23px;top:489.23px" class="cls_009"><span class="cls_009">Archives sur le web</span></div>
+<div style="position:absolute;left:76.22px;top:501.59px" class="cls_009"><span class="cls_009">2004 ±</span></div>
+<div style="position:absolute;left:154.22px;top:501.59px" class="cls_009"><span class="cls_009">Alan Liu</span></div>
+<div style="position:absolute;left:255.05px;top:501.59px" class="cls_009"><span class="cls_009">Web 2.0 et Web</span></div>
+<div style="position:absolute;left:347.23px;top:501.59px" class="cls_009"><span class="cls_009">PhotoNormandie</span></div>
+<div style="position:absolute;left:439.39px;top:501.59px" class="cls_009"><span class="cls_009">Bibliothèques</span></div>
+<div style="position:absolute;left:154.22px;top:513.47px" class="cls_009"><span class="cls_009">Matthew Kirschenbaum</span></div>
+<div style="position:absolute;left:255.05px;top:513.47px" class="cls_009"><span class="cls_009">social</span></div>
+<div style="position:absolute;left:439.39px;top:513.47px" class="cls_009"><span class="cls_009">numériques</span></div>
+<div style="position:absolute;left:255.05px;top:525.35px" class="cls_009"><span class="cls_009">Identité numérique</span></div>
+<div style="position:absolute;left:439.39px;top:525.35px" class="cls_009"><span class="cls_009">Réseaux de partage</span></div>
+<div style="position:absolute;left:255.05px;top:537.23px" class="cls_009"><span class="cls_009">Folksonomies</span></div>
+<div style="position:absolute;left:439.39px;top:537.23px" class="cls_009"><span class="cls_009">Expositions virtuelles</span></div>
+<div style="position:absolute;left:255.05px;top:549.23px" class="cls_009"><span class="cls_009">Nouveaux médias</span></div>
+<div style="position:absolute;left:439.39px;top:549.23px" class="cls_009"><span class="cls_009">Bibliothèque 2.0,</span></div>
+<div style="position:absolute;left:255.05px;top:561.11px" class="cls_009"><span class="cls_009">Collaboration</span></div>
+<div style="position:absolute;left:439.39px;top:561.11px" class="cls_009"><span class="cls_009">musée 2.0</span></div>
+<div style="position:absolute;left:255.05px;top:572.99px" class="cls_009"><span class="cls_009">Amateurs éclairés</span></div>
+<div style="position:absolute;left:255.05px;top:584.87px" class="cls_009"><span class="cls_009">Métadonnées</span></div>
+<div style="position:absolute;left:255.05px;top:596.75px" class="cls_009"><span class="cls_009">Données</span></div>
+<div style="position:absolute;left:76.22px;top:609.11px" class="cls_009"><span class="cls_009">2010 ±</span></div>
+<div style="position:absolute;left:154.22px;top:609.11px" class="cls_009"><span class="cls_009">Alan Liu</span></div>
+<div style="position:absolute;left:255.05px;top:609.11px" class="cls_009"><span class="cls_009">Métamorphose</span></div>
+<div style="position:absolute;left:347.23px;top:609.11px" class="cls_009"><span class="cls_009">THATCamp</span></div>
+<div style="position:absolute;left:439.39px;top:609.11px" class="cls_009"><span class="cls_009">Editions augmentées</span></div>
+<div style="position:absolute;left:154.22px;top:620.99px" class="cls_009"><span class="cls_009">Milad Doueihi</span></div>
+<div style="position:absolute;left:255.05px;top:620.99px" class="cls_009"><span class="cls_009">institutionnelle</span></div>
+<div style="position:absolute;left:439.39px;top:620.99px" class="cls_009"><span class="cls_009">Articles transmédia ?</span></div>
+<div style="position:absolute;left:255.05px;top:632.87px" class="cls_009"><span class="cls_009">Nouveaux chercheurs</span></div>
+<div style="position:absolute;left:439.39px;top:632.87px" class="cls_018"><span class="cls_018">Big data</span><span class="cls_009"> et </span><span class="cls_018">small</span></div>
+<div style="position:absolute;left:255.05px;top:644.87px" class="cls_009"><span class="cls_009">Transdiscipline</span></div>
+<div style="position:absolute;left:439.39px;top:644.87px" class="cls_018"><span class="cls_018">data</span><span class="cls_009"> ?</span></div>
+<div style="position:absolute;left:255.05px;top:656.78px" class="cls_009"><span class="cls_009">Nouvel humanisme</span></div>
+<div style="position:absolute;left:255.05px;top:668.66px" class="cls_009"><span class="cls_009">Interopérabilité</span></div>
+<div style="position:absolute;left:70.82px;top:759.74px" class="cls_010"><span class="cls_010"><sup>32</sup></span><span class="cls_011">. Tableau inspiré des travaux de M. Dalbello, </span><span class="cls_012">op. cit.</span><span class="cls_011">, p. 487.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:7659px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="a5893e00-6932-11eb-8b25-0cc47a792c0a_id_a5893e00-6932-11eb-8b25-0cc47a792c0a_files/background10.jpg" width=595 height=841></div>
+</div>
+
+</body>
+</html>
